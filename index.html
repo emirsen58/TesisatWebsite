@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Üsküdar Tesisat Hizmetleri</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+      background-color: #f4f7f8;
+      color: #333;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #005f99;
+      color: white;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      z-index: 1000;
+    }
+    nav {
+      display: flex;
+      gap: 2.5rem;
+      padding: 1rem 0;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffcc00;
+      text-decoration: underline;
+    }
+    main {
+      padding-top: 70px; /* offset for fixed header */
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    section {
+      padding: 60px 20px;
+      background: white;
+      margin-bottom: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #005f99;
+      margin-bottom: 20px;
+    }
+    #anasayfa {
+      text-align: center;
+      padding-top: 120px;
+      padding-bottom: 120px;
+      background: linear-gradient(135deg, #007acc, #004a80);
+      color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    #anasayfa h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    }
+    #anasayfa p {
+      font-size: 1.4rem;
+      max-width: 700px;
+      margin: 0 auto;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    }
+    #hakkimda p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 450px;
+      margin: 0 auto;
+    }
+    label {
+      margin: 0.7rem 0 0.3rem;
+      font-weight: 600;
+    }
+    input, textarea {
+      padding: 0.6rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
+      transition: border-color 0.3s ease;
+    }
+    input:focus, textarea:focus {
+      border-color: #005f99;
+      outline: none;
+      box-shadow: 0 0 5px #005f99;
+    }
+    button {
+      margin-top: 1.2rem;
+      padding: 0.8rem;
+      font-size: 1.2rem;
+      background-color: #005f99;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #004a80;
+    }
+    .contact-info {
+      max-width: 450px;
+      margin: 0 auto 30px;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: #005f99;
+    }
+    .contact-info p {
+      margin: 0.3rem 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .contact-info svg {
+      fill: #005f99;
+      width: 20px;
+      height: 20px;
+    }
+    iframe {
+      display: block;
+      margin: 0 auto;
+      border: none;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 450px;
+      height: 250px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+      background-color: #e9ecef;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#anasayfa">Anasayfa</a>
+      <a href="#hakkimda">Hakkımda</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="anasayfa">
+      <h1 style="color: white;">Üsküdar Tesisat Hizmetleri</h1>
+      <p>Profesyonel ve güvenilir tesisat hizmetleriyle Üsküdar'da yanınızdayız. Su tesisatı, kombi bakımı, petek temizliği ve daha fazlası için bize ulaşın.</p>
+    </section>
+
+    <section id="hakkimda">
+      <h2>Hakkımda</h2>
+      <p>Yılların tecrübesiyle Üsküdar'da tesisat işleri yapan bir ustayım. Müşteri memnuniyetini ön planda tutarak kaliteli ve hızlı hizmet sunuyorum.</p>
+      <p>Her türlü tesisat arızası, bakım ve montaj işlerinizi güvenle bana emanet edebilirsiniz.</p>
+    </section>
+
+    <section id="iletisim">
+      <h2>İletişim</h2>
+      <div class="contact-info">
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.36 11.36 0 003.55.57 1 1 0 011 1v3.5a1 1 0 01-1 1A16 16 0 014 5a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.55 1 1 0 01-.21 1.11z"/></svg>
+          Telefon: <a href="tel:+905551234567">+90 555 123 45 67</a>
+        </p>
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
+          Adres: İcadiye Mahallesi, Üsküdar, İstanbul, Türkiye
+        </p>
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          E-posta: <a href="mailto:info@uskudartesisat.com">info@uskudartesisat.com</a>
+        </p>
+      </div>
+      <form id="contactForm" action="mailto:info@uskudartesisat.com" method="post" enctype="text/plain">
+        <button type="submit">Gönder</button>
+      </form>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12093.927927927927!2d29.0315!3d41.0225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9a0a0a0a0a0%3A0x123456789abcdef!2sİcadiye%20Mahallesi%2C%20Üsküdar%2C%20İstanbul!5e0!3m2!1str!2str!4v1687000000000!5m2!1str!2str"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Üsküdar İcadiye Mahallesi Haritası"
+      ></iframe>
+    </section>
+
+    <section id="yorum">
+      <h2>Yorum</h2>
+      <form id="commentForm">
+        <label for="name">Adınız:</label>
+        <input type="text" id="name" name="name" disabled />
+
+        <label for="comment">Yorumunuz:</label>
+        <textarea id="comment" name="comment" rows="5" disabled></textarea>
+        <button type="submit" disabled>Gönder</button>
+      </form>
+
+      <div id="exampleComments" style="margin-top: 20px;">
+        <h3>Örnek Yorumlar</h3>
+        <div class="comment">
+          <p><strong>Ahmet Yılmaz:</strong> Hizmetiniz gerçekten çok iyiydi, teşekkür ederim!</p>
+        </div>
+        <div class="comment">
+          <p><strong>Fatma Demir:</strong> Usta çok profesyonel ve hızlı çalıştı, tavsiye ederim.</p>
+        </div>
+        <div class="comment">
+          <p><strong>Mehmet Kaya:</strong> Sorunum kısa sürede çözüldü, çok memnun kaldım.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2024 Üsküdar Tesisat Hizmetleri. Tüm hakları saklıdır.
+  </footer>
+</body>
+</html>
